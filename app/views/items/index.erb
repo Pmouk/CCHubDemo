@@ -1,0 +1,31 @@
+<% @items.each do |item| %>
+  <div style="border: 1px solid; margin: 5px; padding: 2px; width: 300px">
+    <table>
+      <tr>
+        <td class="aright">ID</td>
+        <td>:</td>
+        <td><%= item.id %></td>
+      </tr>
+      <tr>
+        <td class="aright">Name</td>
+        <td>:</td>
+        <td><%= item.name %></td>
+      </tr>
+      <tr>
+        <td class="aright">Description</td>
+        <td>:</td>
+        <td><%= item.description %></td>
+      </tr>
+      <tr>
+        <td class="aright">Price</td>
+        <td>:</td>
+        <td><%= item.price %></td>
+      </tr>
+      <tr>
+        <td class="aright">Tax</td>
+        <td>:</td>
+        <td><%= item.tax %></td>
+      </tr>
+    </table>
+  </div>
+<% end %>
