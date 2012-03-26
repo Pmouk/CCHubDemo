@@ -1,10 +1,6 @@
 class Item < ActiveRecord::Base
-
-  def valid?
-    make_tasty
-    super
-  end
-
+  before_validation :make_tasty
+  
   private
   
   def make_tasty
